@@ -1,0 +1,15 @@
+html(lang="fr")
+  head
+    title= title
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+  body
+    h1 Pug - node template engine
+    .container
+      .jumbotron
+        = "Hi Camarade !"
+      .card
+        ul.list-group.list-group-flush
+          each val in tab
+            li.list-group-item= val
+    script(src="js/bootstrap.min.js")
+    script(src="js/jquery.slim.min.js")
